@@ -32,7 +32,7 @@ uint32_t HX711::onepulse()
 uint32_t HX711::read_once()
 {
   uint32_t result=0;
-  while(digitalRead(DT)==HIGH)
+  while(digitalRead(dt)==HIGH)
   {
   }
   delayMicroseconds(1);

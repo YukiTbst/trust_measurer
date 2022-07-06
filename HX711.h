@@ -1,5 +1,5 @@
-#ifndef HX711
-#define HX711
+#ifndef HX711_
+#define HX711_
 #include "Arduino.h"
 class HX711
 {
@@ -9,8 +9,9 @@ class HX711
   int dt;
   uint32_t onepulse();
   public:
+  HX711(int sck_, int dt_);
   void set_up(int sck_, int dt_);
   uint32_t read_once();
-  HX711(int sck_, int dt_);
+  
 };
 #endif
